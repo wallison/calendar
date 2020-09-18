@@ -7,6 +7,7 @@ import {EventItemComponent} from '../event-item/event-item.component';
   styleUrls: ['./event-item-mobile.component.scss']
 })
 export class EventItemMobileComponent extends EventItemComponent {
+
   getFirstImage() {
     if (this.item && this.item.images && this.item.images.length) {
       for (const img of this.item.images) {

@@ -15,6 +15,7 @@ import { EventItemComponent } from './components/event-item/event-item.component
 import { ActionBarComponent } from './components/action-bar/action-bar.component';
 import { EventContainerMobileComponent } from './containers/event-container-mobile/event-container-mobile.component';
 import { EventItemMobileComponent } from './components/event-item-mobile/event-item-mobile.component';
+import { EventDetailsComponent } from './containers/dialogs/event-details/event-details.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { EventItemMobileComponent } from './components/event-item-mobile/event-i
     EventItemComponent,
     ActionBarComponent,
     EventContainerMobileComponent,
-    EventItemMobileComponent
+    EventItemMobileComponent,
+    EventDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +38,9 @@ import { EventItemMobileComponent } from './components/event-item-mobile/event-i
     MaterialModule
   ],
   providers: [DeviceDetectorService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    EventDetailsComponent
+  ]
 })
 export class AppModule { }

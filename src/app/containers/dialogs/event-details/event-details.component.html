@@ -1,0 +1,11 @@
+<div>
+  <div *ngIf="item" class="details">
+    <div>
+      <div>
+        {{item.start_datetime | date: 'yyyy/MM/dd - HH:mm'}}
+      </div>
+      <img src="{{getFirstImage()}}" style="height: 50px;margin: 10px 0;">
+    </div>
+    <span>{{item.description_short}}</span>
+  </div>
+</div>

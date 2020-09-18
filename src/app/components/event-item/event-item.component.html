@@ -1,4 +1,4 @@
-<div class="card" [title]="item.description_short || ''">
+<div class="card" [title]="item.description_short || ''" (click)="openDetails()">
   <div class="top">
     <div class="date-badge">
       {{item.start_datetime | date: 'yyyy/MM/dd'}}
