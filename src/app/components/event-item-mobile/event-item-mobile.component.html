@@ -1,0 +1,9 @@
+<div class="item">
+  <div class="top">
+    <div class="date-badge">
+      {{item.start_datetime | date: 'yyyy/MM/dd'}}
+    </div>
+    <span>{{item.title}}</span>
+  </div>
+  <img src="{{getFirstImage()}}" style="height: 70%;">
+</div>

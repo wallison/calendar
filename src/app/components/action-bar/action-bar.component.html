@@ -1,0 +1,21 @@
+<div class="action-body" [ngClass]="{'action-mobile': !isDesktop()}">
+  <mat-form-field appearance="outline">
+    <input matInput [matDatepicker]="picker" placeholder="Filter date" (dateChange)="sendFilterDate($event)">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Filter category</mat-label>
+    <mat-select (selectionChange)="sendFilterCategory($event)">
+      <mat-option>None</mat-option>
+      <mat-option *ngFor="let category of categories" [value]="category.id">{{category.title}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Filter tag</mat-label>
+    <mat-select (selectionChange)="sendFilterTag($event)">
+      <mat-option>None</mat-option>
+      <mat-option *ngFor="let tag of tags" [value]="tag.id">{{tag.title}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

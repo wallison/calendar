@@ -1,0 +1,35 @@
+:host {
+  height: 50px;
+  width: 100%;
+
+  .action-body {
+    height: 100%;
+    display: flex;
+
+    ::ng-deep .mat-form-field {
+      font-size: 11px;
+      max-width: 130px;
+      max-height: 30px;
+    }
+
+    mat-form-field {
+      margin-right: 5px;
+    }
+  }
+
+  .action-mobile {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    ::ng-deep .mat-form-field {
+      font-size: 11px;
+      max-width: 30%!important;
+      max-height: 30px;
+    }
+
+    mat-form-field {
+      margin-right: 5px;
+    }
+  }
+}

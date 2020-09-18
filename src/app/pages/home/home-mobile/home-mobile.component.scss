@@ -1,0 +1,27 @@
+:host {
+  .mean-toolbar {
+    display: flex;
+    justify-content: space-between;
+
+    .home-icon {
+    }
+  }
+
+  .home-body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 20px - 56px);
+    max-height: calc(100% - 20px - 56px);
+    overflow-y: auto;
+  }
+
+  .spinner {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 200px);
+  }
+}

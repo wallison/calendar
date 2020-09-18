@@ -1,0 +1,36 @@
+:host {
+  width: calc(100% - 10px);
+  .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: calc(100% - 10px);
+    height: 50px;
+    border: 1px solid rgba(209, 143, 31, 0.59);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: #4B4B4B;
+
+    font-size: 11px;
+
+    .top {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: calc(100% - 10px);
+    }
+
+    .date-badge {
+      height: calc(100% - 20px);
+      padding: 10px;
+      background-color: #4B4B4B;
+      color: white;
+      border-radius: 4px;
+      margin-right: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

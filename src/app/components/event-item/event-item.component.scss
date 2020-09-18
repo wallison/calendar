@@ -1,0 +1,47 @@
+:host {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgba(209, 143, 31, 0.59);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px 5px 0px 5px;
+
+    font-size: 11px;
+    color: #4B4B4B;
+
+    .top {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      padding: 5px;
+      width: 100%;
+      height: 46px;
+      background-color: blanchedalmond;
+      border-radius: 0px 0px 5px 5px;
+      overflow: hidden;
+      white-space: normal;
+      text-overflow: clip;
+    }
+
+    .date-badge {
+      height: 14px;
+      padding: 10px;
+      background-color: #4B4B4B;
+      color: white;
+      border-radius: 4px;
+      margin-right: 5px;
+    }
+  }
+
+  cursor: pointer;
+}
